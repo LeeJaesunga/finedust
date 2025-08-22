@@ -1,0 +1,11 @@
+header {
+    position: relative;
+}
+
+.top-gnb-wrap {
+    position: static;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    background: #fff;
+}
+
