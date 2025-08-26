@@ -566,5 +566,26 @@ header {
     color: #000;
 }
 
+.main-content-box01-renew .main-mini-wrap .main-mini-box02 .control-wrap .swiper-button-prev {
+    left: 10px;
+    background: url("/img/prev.png") no-repeat 0 0 / 100%;
+    margin: 0 50px 0 0;
+}
+
+.main-content-box01-renew .main-mini-wrap .main-mini-box02 .control-wrap .swiper-ctr-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%);
+}
+
+.main-content-box01-renew .main-mini-wrap .main-mini-box02 .control-wrap .swiper-button-next {
+    right: 8px;
+    margin: 0 0 0 50px;
+    background: url("/img/next.png") no-repeat 0 0 / 100%;
+}
+
 
 
