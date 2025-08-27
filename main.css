@@ -587,5 +587,131 @@ header {
     background: url("/img/next.png") no-repeat 0 0 / 100%;
 }
 
+.main-content-box-renew .main-mini-box03 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+
+.renew-title-wrap {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.color-bar {
+    margin: 0 0 10px 0;
+}
+
+.renew-title-wrap .title {
+    margin: 0 0 10px;
+    font-size: 2.111rem;
+    font-weight: 500;
+    line-height: 2.111rem;
+    color: #333;
+}
+
+.renew-title-wrap .desc {
+    font-size: 0.889rem;
+    font-weight: 300;
+    line-height: 0.889rem;
+    color: #333;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box {
+    display: flex;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li {
+    width: calc(20% - 25px);
+    margin: 0 70px 0 0;
+    padding: 44px 12px 44px;
+    position: relative;
+    text-align: center;
+    background-color: #474e56;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    /* background: rgb(26, 173, 253); */
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li > a .main-link-box-top {
+    margin: 0 0 20px;
+    max-height: 106px;
+    height: 100%;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li > a .main-link-icon {
+    margin: 0 0 25px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li .main-link-txt01 {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    word-break: keep-all;
+    z-index: 2;
+}
+
+.main-content-wrap02 .main-content-box02-renew .main-mini-box .main-link-box > li .main-link-txt02 {
+    width: 120px;
+    margin: 0 auto 0px;
+    padding: 10px 10px;
+    position: relative;
+    border-radius: 32px;
+    background-color: #fff;
+    color: #617a93;
+    font-weight: 400;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.main-content-box03-renew .main-mini-box {
+    max-width: 1470px;
+}
+
+.main-content-box03-renew .owl-slider-container {
+    position: relative;
+}
+
+.main-content-box03-renew .main-mini-box .main-content03-carousel {
+    padding: 0 95px;
+}
+
+.main-content-box03-renew .main-mini-box .main-content03-carousel-box {
+    padding: 0 0 !important;
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
 
 
