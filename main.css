@@ -106,8 +106,9 @@ header {
 .owl-carousel .owl-stage { 
     transform: translate3d(0px, 0px, 0px);
     transition: all;
-    width: 2940px;
+    width: 3900px;
 }
+
 
 .owl-carousel .owl-item {
     width: 391px;
