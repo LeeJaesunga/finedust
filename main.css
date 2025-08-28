@@ -110,9 +110,10 @@ header {
 }
 
 .owl-carousel .owl-item {
-    width: 1470px;
+    width: 391px;
     min-height: 1px;
     float: left;
+    margin-right: 40px;
 }
 
 .main-visual-box .item {
@@ -689,8 +690,16 @@ header {
     box-sizing: border-box;
 }
 
+.main-content-box03-renew {
+    background-color: #F0F5F9;
+}
+
 .main-content-box03-renew .main-mini-box {
     max-width: 1470px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    box-sizing: border-box;
 }
 
 .main-content-box03-renew .owl-slider-container {
@@ -705,6 +714,32 @@ header {
     padding: 0 0 !important;
 }
 
+/* .main-content-box03-renew .main-mini-wrap .control-wrap {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+} */
+
+.main-content-box03-renew .main-mini-wrap .control-wrap .prev {
+    position: absolute;
+    width: 4%;
+    height: 16%;
+    top: 50%;
+    left: 0px;
+    background: url("/img/prev.png") no-repeat 0 0 / 100%;
+}
+
+.main-content-box03-renew .main-mini-wrap .control-wrap .next {
+    position: absolute;
+    width: 4%;
+    height: 16%;
+    top: 50%;
+    right: 0px;
+    background: url("/img/next.png") no-repeat 0 0 / 100%;
+}
+
 .owl-carousel.owl-loaded {
     display: block;
 }
@@ -714,4 +749,166 @@ header {
     overflow: hidden;
 }
 
+.main-content-box03-renew .owl-item .img-wrap {
+    position: relative;
+    padding-top: 72.25%;
+}
 
+.main-content-box03-renew .owl-item .img-wrap .img-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content-box03-renew .owl-item .img-wrap .img-box img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-content-box03-renew .owl-item .cleanair-board-txt {
+    padding: 20px 20px 35px;
+    background-color: #fff;
+}
+
+.main-content-box03-renew .owl-item .cleanair-board-txt .cleanair-board-title {
+    height: 43px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 15px 0;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-content-box-renew .main-mini-box04 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+
+.inner-list-wrap .inner-list-box {
+    font-size: 0px;
+}
+
+.inner-list-wrap .inner-list-box .inner-list-item {
+    display: inline-block;
+    width: calc(20% - 45px);
+    margin: 0 45px 30px 0;
+    padding: 22px 0px;
+    font-size: 0.889rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F1F3F2;
+}
+
+.inner-list-wrap .inner-list-box .inner-list-item > a > span {
+    padding: 0 20px 0 0;
+    position: relative;
+    color: #555;
+}
+
+.inner-list-wrap .inner-list-box .inner-list-item > a > span::after {
+    content: "";
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background: url("/img/shortcut-ico02.png") no-repeat;
+}
+
+.inner-list-wrap .inner-list-box .inner-list-item.no-b-mg {
+    margin: 0 45px 0px 0;
+}
+
+.bottom-footer-wrap {
+    background-color: #dbdbdb;
+}
+
+.renew-bottom-foot-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 92px 0px;
+}
+
+.renew-bottom-foot-box p {
+    width: 25%;
+}
+
+.renew-bottom-foot-box p img {
+    max-width: 100%;
+}
+
+.renew-bottom-foot-box > .renew-bottom-foot-info {
+    width: 45.46%;
+}
+
+.renew-bottom-foot-box > .renew-bottom-foot-info > li {
+    margin: 0 0 20px 0;
+    color: #555;
+    font-weight: 400;
+    font-size: 0.889rem;
+    line-height: 22px;
+    letter-spacing: -1px;
+}
+
+.renew-bottom-foot-box .renew-bottom-foot-info li a {
+    display: inline-block;
+    height: 100%;
+    color: #555;
+}
+
+.renew-bottom-foot-box > .renew-bottom-foot-info > li:last-of-type {
+    margin: 0 0 0px 0;
+}
+
+.renew-bottom-foot-box > a {
+     display: inline-block;
+     height: 100%;
+     color: #555;
+}
+
+.renew-shortcut-lnk-box a:first-of-type {
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px; 
+}
+
+.renew-shortcut-lnk-box a:first-of-type::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #555;
+}
+
+.renew-bottom-foot-box .renew-bottom-util-box {
+    flex-basis: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.renew-bottom-foot-box .renew-bottom-util-box li a {
+    display: inline-block;
+}
+
+.renew-bottom-foot-box .renew-bottom-util-box li a img {
+    width: 123px;
+}
+
+.renew-bottom-foot-box .renew-bottom-util-box li:last-of-type a img {
+    width: 74px;
+}
