@@ -73,74 +73,62 @@ $(document).ready(function () {
 // ======================
 // 3) Swiper 초기화
 // ======================
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof Swiper !== "undefined") {
+    new Swiper(".renew-condition-box", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      loop: false
+    });
+  }
+});
+
 $(document).ready(function () {
   var $carousel = $(".main-content03-carousel .owl-carousel");
   var $stage = $carousel.find(".owl-stages");
-  var $items = $stage.find(".owl-item").not(".cloned");
-  var itemsPerView = 3;
-  var currentPage = 0;
-  var totalPages = Math.ceil($items.length / itemsPerView);
+  var $items = $stage.find(".owl-item"); // cloned 포함
+  var current = 0;
+  var itemWidth = $items.outerWidth(true);
+  var maxIndex = $items.length - 1;
 
-  function updateWidths() {
-    var stageWidth = $carousel.width();
-    var itemWidth = stageWidth / itemsPerView;
-    $items.css({
-      flex: "0 0 " + itemWidth + "px",
-      maxWidth: itemWidth + "px"
-    });
-    return itemWidth;
-  }
+  function goTo(index) {
+    if (index < 0) index = 0;
+    if (index > maxIndex) index = maxIndex;
+    current = index;
 
-  function goToPage(page) {
-    if (page < 0) page = 0;
-    if (page >= totalPages) page = totalPages - 1;
-    currentPage = page;
+    $items.removeClass("active").eq(current).addClass("active");
 
-    var itemWidth = updateWidths();
-    var offset = -(itemWidth * itemsPerView * currentPage);
-
-    // 마지막 페이지에서 남은 아이템이 화면보다 적으면 맞춤
-    var remainingItems = $items.length - itemsPerView * currentPage;
-    if (remainingItems < itemsPerView) {
-      offset = -(itemWidth * ($items.length - itemsPerView));
-    }
-
-    // 첫 페이지는 offset 0
-    if (currentPage === 0) offset = 0;
-
+    var offset = -(itemWidth * current);
     $stage.css({
       transform: "translateX(" + offset + "px)",
       transition: "transform 0.4s ease"
     });
 
-    // active 클래스
-    $items.removeClass("active");
-    $items.slice(currentPage * itemsPerView, currentPage * itemsPerView + itemsPerView)
-          .addClass("active");
-
-    // 버튼 활성/비활성
-    $(".main-content03-carousel .prev").toggleClass("disabled", currentPage === 0);
-    $(".main-content03-carousel .next").toggleClass("disabled", currentPage >= totalPages - 1);
+    $(".main-content03-carousel .prev").toggleClass("disabled", current === 0);
+    $(".main-content03-carousel .next").toggleClass("disabled", current === maxIndex);
   }
 
-  goToPage(0);
+  goTo(0);
 
   $(".main-content03-carousel .prev").on("click", function (e) {
     e.preventDefault();
-    if (!$(this).hasClass("disabled")) goToPage(currentPage - 1);
+    if (!$(this).hasClass("disabled")) goTo(current - 1);
   });
 
   $(".main-content03-carousel .next").on("click", function (e) {
     e.preventDefault();
-    if (!$(this).hasClass("disabled")) goToPage(currentPage + 1);
+    if (!$(this).hasClass("disabled")) goTo(current + 1);
   });
 
   $(window).on("resize", function () {
-    goToPage(currentPage);
+    itemWidth = $items.outerWidth(true);
+    goTo(current);
   });
 });
-
-
 
 
 
