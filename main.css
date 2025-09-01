@@ -103,7 +103,7 @@ header {
     overflow: hidden;
 }
 
-.owl-carousel .owl-stage { 
+.owl-carousel .owl-stages { 
     transform: translate3d(0px, 0px, 0px);
     transition: all;
     width: 3900px;
